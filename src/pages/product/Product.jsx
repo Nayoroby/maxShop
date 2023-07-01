@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef, useMemo } from 'react';
 import ReactDOM from 'react-dom/client'
 import '../product/product.scss'
-import Header from '../../components/header/header';
-import Footer from '../../components/footer/Footer';
+import Header from '../../components/header/Header.jsx';
+import Footer from '../../components/footer/Footer.jsx';
 import axios from 'axios'
-import CartModal from '../../components/cartModal/cartModal';
+import CartModal from '../../components/cartModal/CartModal.jsx';
 
 const Product = () => {
 

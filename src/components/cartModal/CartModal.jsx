@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../../pages/home/home.scss' 
-import CartCard from '../cartCard/cartCard';
+import CartCard from '../cartCard/CartCard.jsx';
 import axios from 'axios';
 
 const CartModal = ({open, setOpen, cartCards, setCartCards, deleteCard, getCardInfo}) => {

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import '../home/home.scss'
-import Header from '../../components/header/header';
-import Footer from '../../components/footer/Footer';
-import Card from '../../components/card/Card';
+import Header from '../../components/header/Header.jsx';
+import Footer from '../../components/footer/Footer.jsx';
+import Card from '../../components/card/Card.jsx';
 import axios from 'axios'
-import CartModal from '../../components/cartModal/cartModal';
+import CartModal from '../../components/cartModal/CartModal.jsx';
 
 const Home = () => {
 
