@@ -42,7 +42,9 @@
 }
 
 .card-info__btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff;
     width: 50px;
     height: 50px;

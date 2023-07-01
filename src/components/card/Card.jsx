@@ -5,7 +5,7 @@ const Card = ({obj, addCard, titles, setTitles, getCardInfo}) => {
 
 
     return (
-        <div className='card'>
+        <a className='card' href=''>
             <div className="card__content">
                 <img src={obj.url} alt="" className="card__img" />
                 <div className="card__info">
@@ -21,15 +21,15 @@ const Card = ({obj, addCard, titles, setTitles, getCardInfo}) => {
                     text: obj.text,
                     myId: obj.id,
                 })}>+</button>
-                <button className="card-info__btn" onClick={()=> getCardInfo({
+                <a href='/product' className="card-info__btn" onClick={()=> getCardInfo({
                     title: obj.title,
                     url: obj.url,
                     price: obj.price,
                     text: obj.text,
                     myId: obj.id,
-                })}>i</button>
+                })}>i</a>
             </div>
-        </div>
+        </a>
     );
 };
 

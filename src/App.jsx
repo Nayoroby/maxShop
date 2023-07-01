@@ -2,8 +2,8 @@ import React from 'react';
 import axios from 'axios'
 import {Routes, Route, Link} from 'react-router-dom'
 import { useState } from 'react';
-import {Home} from './pages/home/home';
-import {Product} from './pages/product/product';
+import {Home} from './pages/home/Home.jsx';
+import {Product} from './pages/product/Product.jsx';
 
 function App() {
 
@@ -11,14 +11,14 @@ function App() {
     <>
       <Routes>
         {/* the home page */}
-        <Route path='/' element={<Home/>}>
+        <Route 
+          path='/' 
+          element={<Home/>}>
         </Route>
         {/* the product page */}
-        <Route path='/product' element={<Product/>}>
-        </Route>
-        {/* the third page??? */}
-        <Route>
-
+        <Route 
+          path='/product' 
+          element={<Product/>}>
         </Route>
       </Routes>
     </>

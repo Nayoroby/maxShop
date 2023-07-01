@@ -26,7 +26,7 @@ const Home = () => {
     }, [cartCards])
 
     async function getCardInfo(obj) {
-        window.location.href = window.location.href + 'product'
+        window.location.href = 'http://localhost:5173/product'
         localStorage.setItem('obj', JSON.stringify(obj))
         localStorage.setItem('titles', JSON.stringify(titles))
     }
