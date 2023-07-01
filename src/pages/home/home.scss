@@ -1,0 +1,147 @@
+.home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    margin-top: 120px;
+}
+
+.main__cards {
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    margin-bottom: 40px;
+    grid-row-gap: 20px;
+    justify-items: center;
+}
+
+.main__text {
+    margin-bottom: 20px;
+}
+
+.cart__modal {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 400px;
+    height: 100%;
+    -webkit-box-shadow: -8px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -8px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: -8px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: all 0.3s ease 0s;
+    right: -100%;
+    overflow: auto;
+    z-index: 201;
+}
+
+.cart__modal.active {
+    right: 0;
+}
+
+.modal__cross {
+    position: relative; 
+    cursor: pointer;  
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 20px;
+}
+
+.modal__cross::after,
+.modal__cross::before {
+    content: '';
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.modal__cross::after {
+    transform: rotate(45deg);
+}
+
+.modal__cross::before {
+    transform: rotate(-45deg);
+}
+
+.cart__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart__card:hover {
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.cart-card__img {
+    width: 50px;
+}
+
+.cart-modal__content {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.cart-card__content {
+    display: flex;
+    align-items: center;
+}
+
+.cart-card__title {
+    width: 200px;
+}
+
+.cart-card__cross {
+    position: relative; 
+    cursor: pointer;  
+    width: 15x;
+    height: 15px;
+}
+
+.cart-card__cross::after,
+.cart-card__cross::before {
+    content: '';
+    width: 2px;
+    height: 12px;
+    background-color: black;
+    position: absolute;
+    right: 15px;
+}
+
+.cart-card__cross::after {
+    transform: rotate(45deg);
+}
+
+.cart-card__cross::before {
+    transform: rotate(-45deg);
+}
+
+@media (max-width:1170px) {
+    .main__cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width:899px) {
+    .main__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:699px) {
+    .main__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .search__form {
+        width: 300px;
+    }
+}
+@media (max-width:449px) {
+    .main__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

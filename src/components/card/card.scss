@@ -1,0 +1,62 @@
+.card {
+    position: relative;
+}
+
+.card__title {
+    max-width: 200px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+
+.card__img {
+    width: 200px;
+    height: 300px;
+}
+
+.card__price {
+
+}
+
+
+.card__img {
+    border: 1px solid #000;
+}
+
+.card__btns {
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    opacity: 0;
+    transition: all .5s ease 0s;
+}
+
+.card-add__btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2ec400;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.card-info__btn {
+    display: block;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-box-shadow: -2px 3px 8px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -2px 3px 8px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: -2px 3px 8px 5px rgba(34, 60, 80, 0.2);
+}
+
+.card:hover {
+    transition: all .5s ease 0s;
+    .card__btns {
+        right: 5px;
+        opacity: 1;
+        transition: all .5s ease 0s;
+    }
+}
