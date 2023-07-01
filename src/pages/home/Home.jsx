@@ -33,6 +33,7 @@ const Home = () => {
 
     async function addCard(obj) {
         let found = false 
+        
         for (let i = 0; i < titles.length; i++) {
             if (titles[i] === obj.myId) {
                 found = true 

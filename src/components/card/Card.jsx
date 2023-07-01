@@ -5,7 +5,7 @@ const Card = ({obj, addCard, titles, setTitles, getCardInfo}) => {
 
 
     return (
-        <a className='card' href=''>
+        <div className='card'>
             <div className="card__content">
                 <img src={obj.url} alt="" className="card__img" />
                 <div className="card__info">
@@ -29,7 +29,7 @@ const Card = ({obj, addCard, titles, setTitles, getCardInfo}) => {
                     myId: obj.id,
                 })}>i</a>
             </div>
-        </a>
+        </div>
     );
 };
 
